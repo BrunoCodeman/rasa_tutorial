@@ -2,16 +2,32 @@ intents:
   - saudacao
   - despedida
   - informar_nome
+  - perguntar_correncia
+  - converter_moeda
   
 actions:
   - utter_saudacao
   - utter_despedida
   - utter_perguntar_nome
   - utter_elogiar_nome
+  - action_converter_moeda
+  - action_cotar_moeda
 
 slots:
   nome:
     type: text
+  moeda:
+    type: text
+  valor:
+    type: float
+  correncia_de:
+    type: text
+  correncia_para:
+    type: text
+  valor_conversao:
+    type: float
+  valor_cotacao:
+    type: float
   
 templates:
   utter_saudacao:
@@ -25,3 +41,9 @@ templates:
 
   utter_elogiar_nome:
   - text: "{nome}? Que nome bonito!"
+
+  action_cotar_moeda:
+  - text: "A cotacao atual para {moeda} é {valor_cotacao}"
+
+  action_converter_moeda:
+  - text: "O valor de {valor} em {correncia_de} é  {valor_conversao} em {correncia_para}"

@@ -1,0 +1,2 @@
+action_cotar_moeda:
+  url: "http://localhost:5055/action_cotar_moeda"
