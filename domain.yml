@@ -1,31 +1,27 @@
 intents:
-  - greet
-  - goodbye
-  - mood_affirm
-  - mood_deny
-  - mood_great
-  - mood_unhappy
-
+  - saudacao
+  - despedida
+  - informar_nome
+  
 actions:
-- utter_greet
-- utter_cheer_up
-- utter_did_that_help
-- utter_happy
-- utter_goodbye
+  - utter_saudacao
+  - utter_despedida
+  - utter_perguntar_nome
+  - utter_elogiar_nome
 
+slots:
+  nome:
+    type: text
+  
 templates:
-  utter_greet:
-  - text: "Hey! How are you?"
+  utter_saudacao:
+  - text: "Olá! Como vai?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_despedida:
+  - text: "Até logo!"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_perguntar_nome:
+  - text: "Como tu te chamas?"
 
-  utter_happy:
-  - text: "Great carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
+  utter_elogiar_nome:
+  - text: "{nome}? Que nome bonito!"

@@ -1,27 +1,36 @@
-## happy path
-* greet
-  - utter_greet
-* mood_great
-  - utter_happy
+## saudacao
+* saudacao
+  - utter_saudacao
+  - utter_perguntar_nome
+* informar_nome{"nome" : "Bruno"}
+  - slot{"nome": "Bruno"}
+  - utter_elogiar_nome
 
-## sad path 1
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* mood_affirm
-  - utter_happy
+## saudacao2  
+* saudacao
+  - utter_saudacao
+  - utter_perguntar_nome
+* informar_nome{"nome" : "Evelyn"}
+  - slot{"nome": "Evelyn"}
+  - utter_elogiar_nome
 
-## sad path 2
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
-* mood_deny
-  - utter_goodbye
+## saudacao3
+* saudacao
+  - utter_saudacao
+  - utter_perguntar_nome
+* informar_nome{"nome" : "Paulo"}
+  - slot{"nome": "Paulo"}
+  - utter_elogiar_nome
 
-## say goodbye
-* goodbye
-  - utter_goodbye
+## saudacao4
+* saudacao
+  - utter_saudacao
+  - utter_perguntar_nome
+* informar_nome{"nome" : "Roseli"}
+  - slot{"nome": "Roseli"}
+  - utter_elogiar_nome
+
+## despedida
+* despedida
+  - utter_despedida
+
